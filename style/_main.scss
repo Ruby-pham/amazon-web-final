@@ -1,4 +1,46 @@
 .main {
     @include w-h (100%, 100vh);
-    background-color: pink;
+    background-color: $bg-color4;
+    @include flex (flex, center, center);
+
+    .content {
+        @include w-h (93%, 100vh);
+        background-color: chartreuse;
+
+        .ads {
+            @include w-h (100%, 650px);
+            background-color: burlywood;
+
+            .products {
+                margin: 0px 10px;
+                @include flex (flex, center, auto);
+
+
+                .product-1 {
+                    background-color: $bg-color3 ;
+                    @include w-h (350px, 422px);
+                    margin-right: 10px;
+                }
+
+                .product-2 {
+                    background-color: $bg-color3 ;
+                    @include w-h (350px, 422px);
+                    margin-right: 10px;
+                }
+
+                .product-3 {
+                    background-color: $bg-color3 ;
+                    @include w-h (350px, 422px);
+                    margin-right: 10px;
+                }
+
+                .product-4 {
+                    background-color: $bg-color3 ;
+                    @include w-h (350px, 422px);
+                }
+            }
+
+        }
+    }
+
 }

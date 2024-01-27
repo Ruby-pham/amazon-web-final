@@ -11,10 +11,27 @@
     font-size: $size;
     font-weight: $weight;
     line-height: $l-hieght;
+    // color: $color1;
 }
 
 @mixin flex ($flex, $center, $alight) {
     display: $flex;
     justify-content: $center;
     align-items: $alight;
+}
+
+@mixin style-navtools {
+    a {
+        text-decoration: none;
+
+        .signin_1 {
+            @include font-color (12px, 400, 12px);
+            color: #cccccc
+        }
+
+        .signin_2 {
+            @include font-color (14px, 700, 13px);
+            color: $color1
+        }
+    }
 }

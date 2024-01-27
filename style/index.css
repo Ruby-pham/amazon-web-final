@@ -50,7 +50,7 @@
   border: 1px solid white;
 }
 .header .nav-belt .nav-fill {
-  width: 500px;
+  flex-grow: 1;
   background-color: #fff;
   display: flex;
   justify-content: auto;
@@ -106,16 +106,356 @@
   background-color: #febd69;
   border-radius: 0px 5px 5px 0px;
 }
+.header .nav-belt .nav-tools {
+  width: 380px;
+  height: 60px;
+  display: flex;
+  justify-content: auto;
+  align-items: center;
+}
+.header .nav-belt .nav-tools .change-language {
+  width: 73px;
+  height: 55px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 12px;
+}
+.header .nav-belt .nav-tools .change-language a {
+  text-decoration: none;
+  color: #fff;
+}
+.header .nav-belt .nav-tools .change-language:hover {
+  border: 1px solid white;
+}
+.header .nav-belt .nav-tools .change-language .language-select {
+  position: relative;
+  font-family: Family "Amazon Ember", Arial, sans-serif;
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 14px;
+}
+.header .nav-belt .nav-tools .change-language .language-select:hover .languages {
+  visibility: visible;
+}
+.header .nav-belt .nav-tools .change-language .language-select .languages {
+  position: absolute;
+  width: 200px;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  padding-left: 5px;
+  margin-top: 10px;
+  margin-left: -30px;
+  font-size: 12px;
+  color: #0f1111;
+  background-color: #fff;
+  visibility: hidden;
+}
+.header .nav-belt .nav-tools .change-language .language-select .languages .circle-1 {
+  border: 1px solid grey;
+  width: 15px;
+  height: 15px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: bg-color3;
+  margin-right: 5px;
+}
+.header .nav-belt .nav-tools .change-language .language-select .languages .circle-1 .circle-2 {
+  background-color: #febd69;
+  width: 7px;
+  height: 7px;
+  border-radius: 50%;
+}
+.header .nav-belt .nav-tools .change-language .language-select .languages .circle-3 {
+  border: 1px solid grey;
+  width: 15px;
+  height: 15px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: bg-color3;
+  margin-right: 5px;
+}
+.header .nav-belt .nav-tools .change-language .language-select .languages .circle-3 .circle-4 {
+  background-color: #febd69;
+  width: 7px;
+  height: 7px;
+  border-radius: 50%;
+  visibility: hidden;
+}
+.header .nav-belt .nav-tools .change-language .language-select .languages .circle-3:hover .circle-4 {
+  visibility: visible;
+}
+.header .nav-belt .nav-tools .signin {
+  width: 122px;
+  height: 55px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.header .nav-belt .nav-tools .signin:hover {
+  border: 1px solid white;
+}
+.header .nav-belt .nav-tools .signin a {
+  text-decoration: none;
+}
+.header .nav-belt .nav-tools .signin a .signin_1 {
+  font-family: Family "Amazon Ember", Arial, sans-serif;
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 12px;
+  color: #cccccc;
+}
+.header .nav-belt .nav-tools .signin a .signin_2 {
+  font-family: Family "Amazon Ember", Arial, sans-serif;
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 13px;
+  color: #fff;
+}
+.header .nav-belt .nav-tools .order-return {
+  width: 85px;
+  height: 55px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.header .nav-belt .nav-tools .order-return:hover {
+  border: 1px solid white;
+}
+.header .nav-belt .nav-tools .order-return a {
+  text-decoration: none;
+}
+.header .nav-belt .nav-tools .order-return a .signin_1 {
+  font-family: Family "Amazon Ember", Arial, sans-serif;
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 12px;
+  color: #cccccc;
+}
+.header .nav-belt .nav-tools .order-return a .signin_2 {
+  font-family: Family "Amazon Ember", Arial, sans-serif;
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 13px;
+  color: #fff;
+}
+.header .nav-belt .nav-tools .cart {
+  width: 85px;
+  height: 55px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.header .nav-belt .nav-tools .cart:hover {
+  border: 1px solid white;
+}
+.header .nav-belt .nav-tools .cart i {
+  font-size: 25px;
+  color: #fff;
+}
+.header .nav-belt .nav-tools .cart a {
+  text-decoration: none;
+}
+.header .nav-belt .nav-tools .cart a .signin_1 {
+  font-family: Family "Amazon Ember", Arial, sans-serif;
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 12px;
+  color: #cccccc;
+}
+.header .nav-belt .nav-tools .cart a .signin_2 {
+  font-family: Family "Amazon Ember", Arial, sans-serif;
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 13px;
+  color: #fff;
+}
 .header .menu {
   width: 100%;
   height: 40px;
   background-color: #232f3e;
+  display: flex;
+  justify-content: auto;
+  align-items: center;
+  padding: 0px 20px;
+}
+.header .menu .menu_left {
+  position: relative;
+  width: 50px;
+  height: 36px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.header .menu .menu_left:hover {
+  border: 1px solid white;
+}
+.header .menu .menu_left:hover .sidebar {
+  visibility: visible;
+  width: 1300px;
+}
+.header .menu .menu_left .title {
+  text-decoration: none;
+  font-family: Family "Amazon Ember", Arial, sans-serif;
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 15px;
+  color: #fff;
+}
+.header .menu .menu_left .title i {
+  padding-right: 4px;
+}
+.header .menu .menu_left .sidebar {
+  width: 0px;
+  height: 100vh;
+  display: flex;
+  justify-content: auto;
+  align-items: auto;
+  position: absolute;
+  top: -65px;
+  left: -5px;
+  z-index: 3;
+  background-color: rgba(0, 0, 0, 0.1);
+  visibility: hidden;
+  transition: width 1s;
+}
+.header .menu .menu_left .sidebar .sidebar_list {
+  width: 270px;
+  height: auto;
+  background-color: #fff;
+  overflow: scroll;
+}
+.header .menu .menu_left .sidebar .sidebar_list .sb_list_title {
+  font-family: Family "Amazon Ember", Arial, sans-serif;
+  font-size: 19px;
+  font-weight: 700;
+  line-height: 25px;
+  color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 255px;
+  height: 50px;
+  background-color: #232f3e;
+  margin-bottom: 5px;
+  position: fixed;
+}
+.header .menu .menu_left .sidebar .sidebar_list .sb_list_title i {
+  font-size: 23px;
+  margin-right: 5px;
+}
+.header .menu .menu_left .sidebar .sidebar_list .sb_list_item {
+  margin-top: 60px;
+}
+.header .menu .menu_left .sidebar .sidebar_list .sb_list_item li {
+  list-style-type: none;
+  font-family: Family "Amazon Ember", Arial, sans-serif;
+  font-size: 17px;
+  font-weight: 700;
+  line-height: 24px;
+  color: #232f3e;
+  opacity: 0.9;
+  padding: 5px 0px 5px 15px;
+}
+.header .menu .menu_left .sidebar .sidebar_list .sb_list_item li a {
+  text-decoration: none;
+  font-size: 14px;
+  line-height: 16px;
+  font-weight: 400;
+  color: #111111;
+  opacity: 0.9;
+}
+.header .menu .menu_left .sidebar .sidebar_list .sb_list_item li a:hover {
+  background-color: grey;
+}
+.header .menu .menu_left .sidebar .sidebar_list .sb_list_item .item_space a {
+  display: flex;
+  justify-content: space-between;
+  align-items: auto;
+}
+.header .menu .menu_left .sidebar .sidebar_cancel {
+  width: 30px;
+  height: auto;
+  display: flex;
+  justify-content: center;
+  align-items: auto;
+  font-family: Family "Amazon Ember", Arial, sans-serif;
+  font-size: 19px;
+  font-weight: 700;
+  line-height: 25px;
+  color: #fff;
+  z-index: 5;
+}
+.header .menu div a {
+  width: auto;
+  height: 36px;
+  padding: 5px;
+  text-decoration: none;
+  font-family: Family "Amazon Ember", Arial, sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 12px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #cccccc;
+  margin-right: 5px;
+}
+.header .menu div a:hover {
+  border: 1px solid white;
 }
 
 .main {
   width: 100%;
   height: 100vh;
-  background-color: pink;
+  background-color: #e3e6e6;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.main .content {
+  width: 93%;
+  height: 100vh;
+  background-color: chartreuse;
+}
+.main .content .ads {
+  width: 100%;
+  height: 650px;
+  background-color: burlywood;
+}
+.main .content .ads .products {
+  margin: 0px 10px;
+  display: flex;
+  justify-content: center;
+  align-items: auto;
+}
+.main .content .ads .products .product-1 {
+  background-color: #fff;
+  width: 350px;
+  height: 422px;
+  margin-right: 10px;
+}
+.main .content .ads .products .product-2 {
+  background-color: #fff;
+  width: 350px;
+  height: 422px;
+  margin-right: 10px;
+}
+.main .content .ads .products .product-3 {
+  background-color: #fff;
+  width: 350px;
+  height: 422px;
+  margin-right: 10px;
+}
+.main .content .ads .products .product-4 {
+  background-color: #fff;
+  width: 350px;
+  height: 422px;
 }
 
 .footer {
