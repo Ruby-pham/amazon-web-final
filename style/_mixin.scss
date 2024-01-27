@@ -1,0 +1,20 @@
+@mixin w-h ($h, $w) {
+    width: $h;
+    height: $w;
+}
+
+@mixin font-color ($size, $weight, $l-hieght) {
+    font-family: Family "Amazon Ember",
+        Arial,
+        sans-serif;
+    ;
+    font-size: $size;
+    font-weight: $weight;
+    line-height: $l-hieght;
+}
+
+@mixin flex ($flex, $center, $alight) {
+    display: $flex;
+    justify-content: $center;
+    align-items: $alight;
+}

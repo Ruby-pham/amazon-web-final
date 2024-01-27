@@ -1,0 +1,15 @@
+@import"mixin";
+@import"variable";
+@import"header";
+@import"main";
+@import"footer";
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: Family "Amazon Ember",
+        Arial,
+        sans-serif;
+    ;
+}

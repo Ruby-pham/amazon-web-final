@@ -1,0 +1,4 @@
+.main {
+    @include w-h (100%, 100vh);
+    background-color: pink;
+}
