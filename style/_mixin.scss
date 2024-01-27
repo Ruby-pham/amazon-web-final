@@ -1,6 +1,11 @@
-@mixin w-h ($h, $w) {
-    width: $h;
-    height: $w;
+@mixin w-h ($w, $h) {
+    width: $w;
+    height: $h;
+}
+
+@mixin w-h-product {
+    width: calc(100%/4 - 20px);
+    height: 380px;
 }
 
 @mixin font-color ($size, $weight, $l-hieght) {
@@ -11,7 +16,6 @@
     font-size: $size;
     font-weight: $weight;
     line-height: $l-hieght;
-    // color: $color1;
 }
 
 @mixin flex ($flex, $center, $alight) {
@@ -33,5 +37,198 @@
             @include font-color (14px, 700, 13px);
             color: $color1
         }
+    }
+}
+
+@mixin style-product-1 {
+    .title {
+        @include font-color (21px, 700, 27px);
+        @include w-h (100%, 60px);
+        @include flex (flex, auto, center);
+        color: $color4;
+        padding-left: 13px;
+    }
+
+    .image {
+        flex-grow: 1;
+        @include w-h (100%, 260px);
+        text-align: center;
+        overflow: hidden;
+
+        img {
+            @include w-h (90%, 260px);
+            transition: transform 1s linear;
+
+            &:hover {
+                transform: scale(1.2)
+            }
+        }
+    }
+
+    .connect {
+        @include font-color (13px, 400, 17px);
+        @include w-h (100%, 60px);
+        @include flex (flex, auto, center);
+        padding-left: 13px;
+
+        a {
+            color: $color7 ;
+            text-decoration: none;
+
+            &:hover {
+                color: $color6
+            }
+        }
+
+    }
+}
+
+@mixin style-product-2 {
+    .title {
+        @include font-color (21px, 700, 27px);
+        @include w-h (100%, 60px);
+        @include flex (flex, auto, center);
+        color: $color4;
+        padding-left: 13px;
+    }
+
+    .product {
+        @include w-h (100%, 280px);
+        @include flex (flex, auto, center);
+        flex-wrap: wrap;
+        padding: 0px 10px 0px 10px;
+
+        .product_detail {
+            @include w-h (50%, 50%);
+            @include flex (flex, auto, center);
+            flex-direction: column;
+            flex-wrap: wrap;
+
+            .product_image {
+                @include w-h (100%, 110px);
+                @include flex (flex, center, center);
+                flex-wrap: wrap;
+                overflow: hidden;
+
+                img {
+                    @include w-h (100%, 110px);
+                    transition: transform 1s linear;
+
+                    &:hover {
+                        transform: scale(1.2)
+                    }
+                }
+
+            }
+
+            .saveoff {
+                @include w-h (100%, 30px);
+                @include flex (flex, start, center);
+                padding-left: 8px;
+
+                .save_off {
+                    @include font-color (12px, 400, 16px);
+                    color: $color1;
+                    background-color: $color8;
+                    padding: 4px 10px;
+                    border-radius: 3px;
+                    margin-right: 5px;
+                }
+
+                .deal {
+                    @include font-color (12px, 700, 16px);
+                    color: $color8;
+                }
+            }
+        }
+
+    }
+
+    .connect {
+        @include font-color (13px, 400, 17px);
+        @include w-h (100%, 40px);
+        @include flex (flex, auto, center);
+        padding-left: 13px;
+
+        a {
+            color: $color7 ;
+            text-decoration: none;
+
+            &:hover {
+                color: $color6
+            }
+        }
+
+    }
+}
+
+@mixin style-product-4 {
+    .title {
+        @include font-color (21px, 700, 27px);
+        @include w-h (100%, 60px);
+        @include flex (flex, auto, center);
+        color: $color4;
+        padding-left: 13px;
+    }
+
+    .product {
+        @include w-h (100%, 280px);
+        @include flex (flex, auto, center);
+        flex-wrap: wrap;
+        padding: 0px 10px 0px 10px;
+
+        .product_detail {
+            @include w-h (50%, 50%);
+            @include flex (flex, auto, center);
+            flex-direction: column;
+            flex-wrap: wrap;
+
+            .product_image {
+                @include w-h (100%, 110px);
+                @include flex (flex, center, center);
+                flex-wrap: wrap;
+                overflow: hidden;
+
+                img {
+                    @include w-h (90%, 110px);
+                    transition: transform 1s linear;
+
+                    &:hover {
+                        transform: scale(1.2)
+                    }
+                }
+
+            }
+
+            .title_p1 {
+                @include w-h (100%, 30px);
+                @include flex (flex, start, center);
+                padding-left: 8px;
+                @include font-color (13px, 400, 17px);
+                color: $color4;
+
+                &:hover {
+                    text-decoration: none
+                }
+            }
+
+        }
+    }
+
+    .connect {
+        @include font-color (13px, 400, 17px);
+        @include w-h (100%, 40px);
+        @include flex (flex, auto, center);
+        padding-left: 13px;
+
+        a {
+            color: $color7 ;
+            text-decoration: none;
+
+            &:hover {
+                color: $color6
+            }
+        }
+
     }
 }

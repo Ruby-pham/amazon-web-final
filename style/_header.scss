@@ -146,6 +146,7 @@
                         color: #0f1111;
                         background-color: $bg-color3;
                         visibility: hidden;
+                        z-index: 10;
 
                         .circle-1 {
                             border: 1px solid grey;
@@ -249,7 +250,7 @@
 
             &:hover .sidebar {
                 visibility: visible;
-                width: 1300px;
+                width: 1500px;
             }
 
             .title {
