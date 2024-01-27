@@ -109,10 +109,11 @@
 
         }
 
-        .menu {
-            @include w-h (100%, 40px);
-            background-color: $bg-color2;
+    }
 
-        }
+    .menu {
+        @include w-h (100%, 40px);
+        background-color: $bg-color2;
+
     }
 }
