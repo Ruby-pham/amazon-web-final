@@ -318,7 +318,7 @@
   align-items: auto;
   position: absolute;
   top: -65px;
-  left: -5px;
+  left: -21px;
   z-index: 3;
   background-color: rgba(0, 0, 0, 0.1);
   visibility: hidden;
@@ -389,7 +389,6 @@
   font-weight: 700;
   line-height: 25px;
   color: #fff;
-  z-index: 5;
 }
 .header .menu div a {
   width: auto;
@@ -401,7 +400,7 @@
   font-weight: 400;
   line-height: 12px;
   display: flex;
-  justify-content: center;
+  justify-content: auto;
   align-items: center;
   color: #cccccc;
   margin-right: 5px;

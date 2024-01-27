@@ -267,7 +267,7 @@
                 @include flex (flex, auto, auto);
                 position: absolute;
                 top: -65px;
-                left: -5px;
+                left: -21px;
                 z-index: 3;
                 background-color: rgba(0, 0, 0, 0.1);
                 visibility: hidden;
@@ -330,7 +330,6 @@
                     @include flex (flex, center, auto);
                     @include font-color (19px, 700, 25px);
                     color: $color1 ;
-                    z-index: 5;
                 }
             }
 
@@ -343,7 +342,7 @@
                 padding: 5px;
                 text-decoration: none;
                 @include font-color (14px, 400, 12px);
-                @include flex (flex, center, center);
+                @include flex (flex, auto, center);
                 color: $color5;
                 margin-right: 5px;
 
