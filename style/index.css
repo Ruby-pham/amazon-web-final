@@ -430,19 +430,16 @@
   position: relative;
 }
 .main .content .ads .products {
-  display: flex;
-  justify-content: center;
-  align-items: auto;
   position: absolute;
   width: 100%;
   height: 380px;
   top: 270px;
+  margin-left: 1px;
 }
 .main .content .ads .products .product-1 {
   background-color: #fff;
-  width: calc(25% - 20px);
+  width: 100%;
   height: 380px;
-  margin-right: 10px;
 }
 .main .content .ads .products .product-1 .title {
   font-family: Family "Amazon Ember", Arial, sans-serif;
@@ -493,9 +490,8 @@
 }
 .main .content .ads .products .product-2 {
   background-color: #fff;
-  width: calc(25% - 20px);
+  width: 100%;
   height: 380px;
-  margin-right: 10px;
 }
 .main .content .ads .products .product-2 .title {
   font-family: Family "Amazon Ember", Arial, sans-serif;
@@ -592,9 +588,8 @@
 }
 .main .content .ads .products .product-3 {
   background-color: #fff;
-  width: calc(25% - 20px);
+  width: 100%;
   height: 380px;
-  margin-right: 10px;
 }
 .main .content .ads .products .product-3 .title {
   font-family: Family "Amazon Ember", Arial, sans-serif;
@@ -645,7 +640,7 @@
 }
 .main .content .ads .products .product-4 {
   background-color: #fff;
-  width: calc(25% - 20px);
+  width: 100%;
   height: 380px;
 }
 .main .content .ads .products .product-4 .title {
@@ -732,35 +727,33 @@
   color: #c7511f;
 }
 .main .content .products-2 {
-  display: flex;
-  justify-content: center;
-  align-items: auto;
   width: 100%;
   height: 380px;
   background-color: aquamarine;
   margin-top: 10px;
+  margin-left: 1px;
 }
 .main .content .products-2 .products-2-1 {
   background-color: #fff;
-  width: calc(25% - 20px);
+  width: 100%;
   height: 380px;
   margin-right: 10px;
 }
 .main .content .products-2 .products-2-2 {
   background-color: #fff;
-  width: calc(25% - 20px);
+  width: 100%;
   height: 380px;
   margin-right: 10px;
 }
 .main .content .products-2 .products-2-3 {
   background-color: #fff;
-  width: calc(25% - 20px);
+  width: 100%;
   height: 380px;
   margin-right: 10px;
 }
 .main .content .products-2 .products-2-4 {
   background-color: #fff;
-  width: calc(25% - 20px);
+  width: 100%;
   height: 380px;
 }
 
