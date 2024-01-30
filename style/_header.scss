@@ -1,9 +1,8 @@
 .header {
-    @include w-h (100%, 100px);
-    padding: 0;
+    @include w-h (100%, auto);
 
     .nav-belt {
-        @include w-h (100%, 60px);
+        @include w-h (100%, auto);
         background-color: $bg-color1;
 
         .logo {

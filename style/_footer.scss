@@ -27,12 +27,13 @@
 
         .information {
             background-color: $bg-color2 ;
-            @include w-h (100%, 400px);
+            @include w-h (100%, auto);
             @include flex (flex, center, auto);
 
             .information-1 {
                 display: flex;
                 flex-direction: column;
+                @include w-h (230px, auto);
                 padding-top: 50px;
                 padding-right: 30px;
 
@@ -100,7 +101,70 @@
     }
 
     .support {
-        @include w-h (100%, 415px);
+        @include w-h (100%, auto);
         background-color: $color11 ;
+        @include flex (flex, center, auto);
+
+        .support-1 {
+            display: flex;
+            flex-direction: column;
+            @include w-h (150px, auto);
+            padding-top: 20px;
+            padding-right: 30px;
+
+            a {
+                @include font-color (12px, 400, 13px);
+                @include w-h (130px, 95px);
+                display: flex;
+                flex-direction: column;
+                color: $color12 ;
+                padding: 5px;
+
+                span {
+                    @include font-color (12px, 700, 14px);
+                    color: $color10 ;
+                }
+            }
+        }
+    }
+
+    .end {
+        background-color: $color11;
+        @include w-h (100%, 100px);
+        @include flex (flex, center, center);
+        flex-direction: column;
+
+        a {
+            @include font-color (12px, 400, 13px);
+            color: $color12 ;
+            padding-right: 10px;
+        }
+
+        button {
+            border-radius: 30%;
+            background-color: blue;
+            @include w-h (40px, 20px);
+            @include flex (flex, center, center);
+
+            .first {
+                @include font-color (12px, 400, 13px);
+                color: blue;
+                background-color: aliceblue;
+                @include w-h (20px, 20px);
+                @include flex (flex, center, center);
+            }
+
+            .last {
+                @include font-color (12px, 400, 13px);
+                color: $color10;
+                @include w-h (20px, 20px);
+                @include flex (flex, center, center);
+            }
+        }
+
+        p {
+            @include font-color (12px, 400, 13px);
+            color: $color12 ;
+        }
     }
 }

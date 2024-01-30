@@ -1,11 +1,10 @@
 .header {
   width: 100%;
-  height: 100px;
-  padding: 0;
+  height: auto;
 }
 .header .nav-belt {
   width: 100%;
-  height: 60px;
+  height: auto;
   background-color: #131921;
 }
 .header .nav-belt .logo {
@@ -484,6 +483,7 @@
 .main .content {
   width: 93%;
   height: auto;
+  overflow: scroll;
 }
 .main .content .ads {
   width: 100%;
@@ -1136,7 +1136,7 @@
 .footer .info .information {
   background-color: #232f3e;
   width: 100%;
-  height: 400px;
+  height: auto;
   display: flex;
   justify-content: center;
   align-items: auto;
@@ -1144,6 +1144,8 @@
 .footer .info .information .information-1 {
   display: flex;
   flex-direction: column;
+  width: 230px;
+  height: auto;
   padding-top: 50px;
   padding-right: 30px;
 }
@@ -1340,8 +1342,96 @@
 }
 .footer .support {
   width: 100%;
-  height: 415px;
+  height: auto;
   background-color: #131a22;
+  display: flex;
+  justify-content: center;
+  align-items: auto;
+}
+.footer .support .support-1 {
+  display: flex;
+  flex-direction: column;
+  width: 150px;
+  height: auto;
+  padding-top: 20px;
+  padding-right: 30px;
+}
+.footer .support .support-1 a {
+  font-family: "Amazon Ember", Arial, sans-serif;
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 13px;
+  width: 130px;
+  height: 95px;
+  display: flex;
+  flex-direction: column;
+  color: #999999;
+  padding: 5px;
+}
+.footer .support .support-1 a span {
+  font-family: "Amazon Ember", Arial, sans-serif;
+  font-size: 12px;
+  font-weight: 700;
+  line-height: 14px;
+  color: #dddddd;
+}
+.footer .end {
+  background-color: #131a22;
+  width: 100%;
+  height: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.footer .end a {
+  font-family: "Amazon Ember", Arial, sans-serif;
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 13px;
+  color: #999999;
+  padding-right: 10px;
+}
+.footer .end button {
+  border-radius: 30%;
+  background-color: blue;
+  width: 40px;
+  height: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.footer .end button .first {
+  font-family: "Amazon Ember", Arial, sans-serif;
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 13px;
+  color: blue;
+  background-color: aliceblue;
+  width: 20px;
+  height: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.footer .end button .last {
+  font-family: "Amazon Ember", Arial, sans-serif;
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 13px;
+  color: #dddddd;
+  width: 20px;
+  height: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.footer .end p {
+  font-family: "Amazon Ember", Arial, sans-serif;
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 13px;
+  color: #999999;
 }
 
 * {

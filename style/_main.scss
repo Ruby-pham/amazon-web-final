@@ -6,6 +6,7 @@
 
     .content {
         @include w-h (93%, auto);
+        overflow: scroll;
 
         .ads {
             @include w-h (100%, 650px);
