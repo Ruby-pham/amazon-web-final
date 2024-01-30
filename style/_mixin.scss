@@ -9,10 +9,7 @@
 }
 
 @mixin font-color ($size, $weight, $l-hieght) {
-    font-family: Family "Amazon Ember",
-        Arial,
-        sans-serif;
-    ;
+    font-family: "Amazon Ember", Arial, sans-serif;
     font-size: $size;
     font-weight: $weight;
     line-height: $l-hieght;
@@ -40,6 +37,132 @@
     }
 }
 
+@mixin style-dropdown-languages {
+    .dropdown {
+        .btn {
+            @include font-color (13px, 400, 18px);
+            color: $color5 ;
+
+            span {
+                padding-right: 3px;
+            }
+
+        }
+
+        &:hover .dropdown-menu {
+            display: block;
+        }
+
+        .dropdown-menu {
+            @include w-h (250px, auto);
+
+            .dropdown-item {
+                @include font-color (12px, 400, 18px);
+                @include flex (flex, auto, center);
+                color: $color4;
+
+                .link-item {
+                    @include font-color (10px, 400, 0px);
+                    color: $color7;
+                    padding-left: 5px
+                }
+
+                .link-item1 {
+                    @include font-color (10px, 400, 0px);
+                    color: blue;
+                    padding-left: 50px;
+                }
+
+                .circle-1 {
+                    border: 1px solid grey;
+                    @include w-h (15px, 15px);
+                    border-radius: 50%;
+                    @include flex (flex, center, center);
+                    background-color: $bg-color3;
+                    margin-right: 5px;
+
+                    .circle-2 {
+                        background-color: $color2;
+                        @include w-h (7px, 7px);
+                        border-radius: 50%;
+                    }
+
+                }
+
+                .circle-3 {
+                    border: 1px solid grey;
+                    @include w-h (15px, 15px);
+                    border-radius: 50%;
+                    @include flex (flex, center, center);
+                    background-color: bg-color3;
+                    margin-right: 5px;
+
+                    .circle-4 {
+                        background-color: $color2;
+                        @include w-h (7px, 7px);
+                        border-radius: 50%;
+                        visibility: hidden;
+                    }
+
+                    &:hover .circle-4 {
+                        visibility: visible
+                    }
+
+                }
+            }
+
+            .language-item {
+                @include w-h (200px, auto);
+                display: flex;
+                flex-direction: column;
+                padding-left: 5px;
+                color: #0f1111;
+                background-color: $bg-color3;
+                z-index: 10;
+
+                .circle-1 {
+                    border: 1px solid grey;
+                    @include w-h (15px, 15px);
+                    border-radius: 50%;
+                    @include flex (flex, center, center);
+                    background-color: $bg-color3;
+                    margin-right: 5px;
+
+                    .circle-2 {
+                        background-color: $color2;
+                        @include w-h (7px, 7px);
+                        border-radius: 50%;
+                    }
+
+                }
+
+                .circle-3 {
+                    border: 1px solid grey;
+                    @include w-h (15px, 15px);
+                    border-radius: 50%;
+                    @include flex (flex, center, center);
+                    background-color: bg-color3;
+                    margin-right: 5px;
+
+                    .circle-4 {
+                        background-color: $color2;
+                        @include w-h (7px, 7px);
+                        border-radius: 50%;
+                        visibility: hidden;
+                    }
+
+                    &:hover .circle-4 {
+                        visibility: visible
+                    }
+
+                }
+
+            }
+        }
+
+    }
+}
+
 @mixin style-product-1 {
     .title {
         @include font-color (21px, 700, 27px);
@@ -55,9 +178,11 @@
         text-align: center;
         overflow: hidden;
 
+
         img {
             @include w-h (90%, 260px);
-            transition: transform 1s linear;
+            transition: transform 2s linear;
+            object-fit: cover;
 
             &:hover {
                 transform: scale(1.2)
@@ -112,7 +237,8 @@
 
                 img {
                     @include w-h (100%, 110px);
-                    transition: transform 1s linear;
+                    transition: transform 2s linear;
+                    object-fit: cover;
 
                     &:hover {
                         transform: scale(1.2)
@@ -191,7 +317,8 @@
 
                 img {
                     @include w-h (90%, 110px);
-                    transition: transform 1s linear;
+                    transition: transform 2s linear;
+                    object-fit: cover;
 
                     &:hover {
                         transform: scale(1.2)
@@ -227,6 +354,53 @@
 
             &:hover {
                 color: $color6
+            }
+        }
+
+    }
+}
+
+@mixin style-product-slide1 {
+    .carousel {
+        @include w-h (100%, 250px);
+        @include flex (flex, center, center);
+
+        .carousel-inner {
+            @include w-h (100%, 250px);
+            background-color: $color1;
+
+            .title {
+                @include font-color (21px, 700, 32px);
+                color: $color4;
+                @include w-h (100%, 50px);
+            }
+
+            .carousel-item {
+                .images {
+                    @include w-h (100%, 200px);
+                    @include flex (flex, center, center);
+                    background-color: $color1;
+                    overflow: hidden;
+
+                    img {
+                        @include w-h (auto, 220px);
+                        padding-right: 10px;
+                    }
+                }
+
+            }
+        }
+
+
+        .btn-style {
+            @include w-h (60px, 100px);
+            border-radius: 5px;
+            top: 80px;
+            margin-left: 20px;
+            margin-right: 20px;
+
+            &:hover {
+                background-color: $color7;
             }
         }
 

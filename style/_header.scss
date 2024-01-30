@@ -113,79 +113,13 @@
             @include flex (flex, auto, center);
 
             .change-language {
-                @include w-h (73px, 55px);
+                @include w-h (90px, 55px);
                 @include flex (flex, center, center);
                 font-size: 12px;
-
-                a {
-                    text-decoration: none;
-                    color: $color1 ;
-                }
+                @include style-dropdown-languages;
 
                 &:hover {
                     border: 1px solid white
-                }
-
-                .language-select {
-                    position: relative;
-                    @include font-color (12px, 400, 14px);
-
-                    &:hover .languages {
-                        visibility: visible;
-                    }
-
-                    .languages {
-                        position: absolute;
-                        @include w-h (200px, auto);
-                        display: flex;
-                        flex-direction: column;
-                        padding-left: 5px;
-                        margin-top: 10px;
-                        margin-left: -30px;
-                        font-size: 12px;
-                        color: #0f1111;
-                        background-color: $bg-color3;
-                        visibility: hidden;
-                        z-index: 10;
-
-                        .circle-1 {
-                            border: 1px solid grey;
-                            @include w-h (15px, 15px);
-                            border-radius: 50%;
-                            @include flex (flex, center, center);
-                            background-color: bg-color3;
-                            margin-right: 5px;
-
-                            .circle-2 {
-                                background-color: $color2;
-                                @include w-h (7px, 7px);
-                                border-radius: 50%;
-                            }
-
-                        }
-
-                        .circle-3 {
-                            border: 1px solid grey;
-                            @include w-h (15px, 15px);
-                            border-radius: 50%;
-                            @include flex (flex, center, center);
-                            background-color: bg-color3;
-                            margin-right: 5px;
-
-                            .circle-4 {
-                                background-color: $color2;
-                                @include w-h (7px, 7px);
-                                border-radius: 50%;
-                                visibility: hidden;
-                            }
-
-                            &:hover .circle-4 {
-                                visibility: visible
-                            }
-
-                        }
-
-                    }
                 }
 
             }

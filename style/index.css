@@ -34,14 +34,14 @@
   font-size: 18px;
 }
 .header .nav-belt .deliver .deliver-to {
-  font-family: Family "Amazon Ember", Arial, sans-serif;
+  font-family: "Amazon Ember", Arial, sans-serif;
   font-size: 12px;
   font-weight: 400;
   line-height: 14px;
   color: #cccccc;
 }
 .header .nav-belt .deliver .location {
-  font-family: Family "Amazon Ember", Arial, sans-serif;
+  font-family: "Amazon Ember", Arial, sans-serif;
   font-size: 14px;
   font-weight: 700;
   line-height: 15px;
@@ -114,46 +114,105 @@
   align-items: center;
 }
 .header .nav-belt .nav-tools .change-language {
-  width: 73px;
+  width: 90px;
   height: 55px;
   display: flex;
   justify-content: center;
   align-items: center;
   font-size: 12px;
 }
-.header .nav-belt .nav-tools .change-language a {
-  text-decoration: none;
-  color: #fff;
+.header .nav-belt .nav-tools .change-language .dropdown .btn {
+  font-family: "Amazon Ember", Arial, sans-serif;
+  font-size: 13px;
+  font-weight: 400;
+  line-height: 18px;
+  color: #cccccc;
 }
-.header .nav-belt .nav-tools .change-language:hover {
-  border: 1px solid white;
+.header .nav-belt .nav-tools .change-language .dropdown .btn span {
+  padding-right: 3px;
 }
-.header .nav-belt .nav-tools .change-language .language-select {
-  position: relative;
-  font-family: Family "Amazon Ember", Arial, sans-serif;
+.header .nav-belt .nav-tools .change-language .dropdown:hover .dropdown-menu {
+  display: block;
+}
+.header .nav-belt .nav-tools .change-language .dropdown .dropdown-menu {
+  width: 250px;
+  height: auto;
+}
+.header .nav-belt .nav-tools .change-language .dropdown .dropdown-menu .dropdown-item {
+  font-family: "Amazon Ember", Arial, sans-serif;
   font-size: 12px;
   font-weight: 400;
-  line-height: 14px;
+  line-height: 18px;
+  display: flex;
+  justify-content: auto;
+  align-items: center;
+  color: #0f1111;
 }
-.header .nav-belt .nav-tools .change-language .language-select:hover .languages {
+.header .nav-belt .nav-tools .change-language .dropdown .dropdown-menu .dropdown-item .link-item {
+  font-family: "Amazon Ember", Arial, sans-serif;
+  font-size: 10px;
+  font-weight: 400;
+  line-height: 0px;
+  color: rgb(0, 113, 133);
+  padding-left: 5px;
+}
+.header .nav-belt .nav-tools .change-language .dropdown .dropdown-menu .dropdown-item .link-item1 {
+  font-family: "Amazon Ember", Arial, sans-serif;
+  font-size: 10px;
+  font-weight: 400;
+  line-height: 0px;
+  color: blue;
+  padding-left: 50px;
+}
+.header .nav-belt .nav-tools .change-language .dropdown .dropdown-menu .dropdown-item .circle-1 {
+  border: 1px solid grey;
+  width: 15px;
+  height: 15px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #fff;
+  margin-right: 5px;
+}
+.header .nav-belt .nav-tools .change-language .dropdown .dropdown-menu .dropdown-item .circle-1 .circle-2 {
+  background-color: #febd69;
+  width: 7px;
+  height: 7px;
+  border-radius: 50%;
+}
+.header .nav-belt .nav-tools .change-language .dropdown .dropdown-menu .dropdown-item .circle-3 {
+  border: 1px solid grey;
+  width: 15px;
+  height: 15px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: bg-color3;
+  margin-right: 5px;
+}
+.header .nav-belt .nav-tools .change-language .dropdown .dropdown-menu .dropdown-item .circle-3 .circle-4 {
+  background-color: #febd69;
+  width: 7px;
+  height: 7px;
+  border-radius: 50%;
+  visibility: hidden;
+}
+.header .nav-belt .nav-tools .change-language .dropdown .dropdown-menu .dropdown-item .circle-3:hover .circle-4 {
   visibility: visible;
 }
-.header .nav-belt .nav-tools .change-language .language-select .languages {
-  position: absolute;
+.header .nav-belt .nav-tools .change-language .dropdown .dropdown-menu .language-item {
   width: 200px;
   height: auto;
   display: flex;
   flex-direction: column;
   padding-left: 5px;
-  margin-top: 10px;
-  margin-left: -30px;
-  font-size: 12px;
   color: #0f1111;
   background-color: #fff;
-  visibility: hidden;
   z-index: 10;
 }
-.header .nav-belt .nav-tools .change-language .language-select .languages .circle-1 {
+.header .nav-belt .nav-tools .change-language .dropdown .dropdown-menu .language-item .circle-1 {
   border: 1px solid grey;
   width: 15px;
   height: 15px;
@@ -161,16 +220,16 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: bg-color3;
+  background-color: #fff;
   margin-right: 5px;
 }
-.header .nav-belt .nav-tools .change-language .language-select .languages .circle-1 .circle-2 {
+.header .nav-belt .nav-tools .change-language .dropdown .dropdown-menu .language-item .circle-1 .circle-2 {
   background-color: #febd69;
   width: 7px;
   height: 7px;
   border-radius: 50%;
 }
-.header .nav-belt .nav-tools .change-language .language-select .languages .circle-3 {
+.header .nav-belt .nav-tools .change-language .dropdown .dropdown-menu .language-item .circle-3 {
   border: 1px solid grey;
   width: 15px;
   height: 15px;
@@ -181,15 +240,18 @@
   background-color: bg-color3;
   margin-right: 5px;
 }
-.header .nav-belt .nav-tools .change-language .language-select .languages .circle-3 .circle-4 {
+.header .nav-belt .nav-tools .change-language .dropdown .dropdown-menu .language-item .circle-3 .circle-4 {
   background-color: #febd69;
   width: 7px;
   height: 7px;
   border-radius: 50%;
   visibility: hidden;
 }
-.header .nav-belt .nav-tools .change-language .language-select .languages .circle-3:hover .circle-4 {
+.header .nav-belt .nav-tools .change-language .dropdown .dropdown-menu .language-item .circle-3:hover .circle-4 {
   visibility: visible;
+}
+.header .nav-belt .nav-tools .change-language:hover {
+  border: 1px solid white;
 }
 .header .nav-belt .nav-tools .signin {
   width: 122px;
@@ -205,14 +267,14 @@
   text-decoration: none;
 }
 .header .nav-belt .nav-tools .signin a .signin_1 {
-  font-family: Family "Amazon Ember", Arial, sans-serif;
+  font-family: "Amazon Ember", Arial, sans-serif;
   font-size: 12px;
   font-weight: 400;
   line-height: 12px;
   color: #cccccc;
 }
 .header .nav-belt .nav-tools .signin a .signin_2 {
-  font-family: Family "Amazon Ember", Arial, sans-serif;
+  font-family: "Amazon Ember", Arial, sans-serif;
   font-size: 14px;
   font-weight: 700;
   line-height: 13px;
@@ -232,14 +294,14 @@
   text-decoration: none;
 }
 .header .nav-belt .nav-tools .order-return a .signin_1 {
-  font-family: Family "Amazon Ember", Arial, sans-serif;
+  font-family: "Amazon Ember", Arial, sans-serif;
   font-size: 12px;
   font-weight: 400;
   line-height: 12px;
   color: #cccccc;
 }
 .header .nav-belt .nav-tools .order-return a .signin_2 {
-  font-family: Family "Amazon Ember", Arial, sans-serif;
+  font-family: "Amazon Ember", Arial, sans-serif;
   font-size: 14px;
   font-weight: 700;
   line-height: 13px;
@@ -263,14 +325,14 @@
   text-decoration: none;
 }
 .header .nav-belt .nav-tools .cart a .signin_1 {
-  font-family: Family "Amazon Ember", Arial, sans-serif;
+  font-family: "Amazon Ember", Arial, sans-serif;
   font-size: 12px;
   font-weight: 400;
   line-height: 12px;
   color: #cccccc;
 }
 .header .nav-belt .nav-tools .cart a .signin_2 {
-  font-family: Family "Amazon Ember", Arial, sans-serif;
+  font-family: "Amazon Ember", Arial, sans-serif;
   font-size: 14px;
   font-weight: 700;
   line-height: 13px;
@@ -302,7 +364,7 @@
 }
 .header .menu .menu_left .title {
   text-decoration: none;
-  font-family: Family "Amazon Ember", Arial, sans-serif;
+  font-family: "Amazon Ember", Arial, sans-serif;
   font-size: 14px;
   font-weight: 700;
   line-height: 15px;
@@ -332,7 +394,7 @@
   overflow: scroll;
 }
 .header .menu .menu_left .sidebar .sidebar_list .sb_list_title {
-  font-family: Family "Amazon Ember", Arial, sans-serif;
+  font-family: "Amazon Ember", Arial, sans-serif;
   font-size: 19px;
   font-weight: 700;
   line-height: 25px;
@@ -355,7 +417,7 @@
 }
 .header .menu .menu_left .sidebar .sidebar_list .sb_list_item li {
   list-style-type: none;
-  font-family: Family "Amazon Ember", Arial, sans-serif;
+  font-family: "Amazon Ember", Arial, sans-serif;
   font-size: 17px;
   font-weight: 700;
   line-height: 24px;
@@ -385,7 +447,7 @@
   display: flex;
   justify-content: center;
   align-items: auto;
-  font-family: Family "Amazon Ember", Arial, sans-serif;
+  font-family: "Amazon Ember", Arial, sans-serif;
   font-size: 19px;
   font-weight: 700;
   line-height: 25px;
@@ -396,7 +458,7 @@
   height: 36px;
   padding: 5px;
   text-decoration: none;
-  font-family: Family "Amazon Ember", Arial, sans-serif;
+  font-family: "Amazon Ember", Arial, sans-serif;
   font-size: 14px;
   font-weight: 400;
   line-height: 12px;
@@ -417,6 +479,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  margin-bottom: 10px;
 }
 .main .content {
   width: 93%;
@@ -429,20 +492,26 @@
 .main .content .ads .carousel {
   position: relative;
 }
+.main .content .ads .btn-style-bue {
+  width: 70px;
+  height: 240px;
+  border-radius: 5px;
+}
+.main .content .ads .btn-style-bue:focus {
+  border: 2px solid rgb(0, 113, 133);
+}
 .main .content .ads .products {
   position: absolute;
   width: 100%;
   height: 380px;
-  top: 270px;
+  top: 250px;
   margin-left: 1px;
 }
 .main .content .ads .products .product-1 {
   background-color: #fff;
-  width: 100%;
-  height: 380px;
 }
 .main .content .ads .products .product-1 .title {
-  font-family: Family "Amazon Ember", Arial, sans-serif;
+  font-family: "Amazon Ember", Arial, sans-serif;
   font-size: 21px;
   font-weight: 700;
   line-height: 27px;
@@ -464,13 +533,15 @@
 .main .content .ads .products .product-1 .image img {
   width: 90%;
   height: 260px;
-  transition: transform 1s linear;
+  transition: transform 2s linear;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 .main .content .ads .products .product-1 .image img:hover {
   transform: scale(1.2);
 }
 .main .content .ads .products .product-1 .connect {
-  font-family: Family "Amazon Ember", Arial, sans-serif;
+  font-family: "Amazon Ember", Arial, sans-serif;
   font-size: 13px;
   font-weight: 400;
   line-height: 17px;
@@ -494,7 +565,7 @@
   height: 380px;
 }
 .main .content .ads .products .product-2 .title {
-  font-family: Family "Amazon Ember", Arial, sans-serif;
+  font-family: "Amazon Ember", Arial, sans-serif;
   font-size: 21px;
   font-weight: 700;
   line-height: 27px;
@@ -536,7 +607,9 @@
 .main .content .ads .products .product-2 .product .product_detail .product_image img {
   width: 100%;
   height: 110px;
-  transition: transform 1s linear;
+  transition: transform 2s linear;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 .main .content .ads .products .product-2 .product .product_detail .product_image img:hover {
   transform: scale(1.2);
@@ -550,7 +623,7 @@
   padding-left: 8px;
 }
 .main .content .ads .products .product-2 .product .product_detail .saveoff .save_off {
-  font-family: Family "Amazon Ember", Arial, sans-serif;
+  font-family: "Amazon Ember", Arial, sans-serif;
   font-size: 12px;
   font-weight: 400;
   line-height: 16px;
@@ -561,14 +634,14 @@
   margin-right: 5px;
 }
 .main .content .ads .products .product-2 .product .product_detail .saveoff .deal {
-  font-family: Family "Amazon Ember", Arial, sans-serif;
+  font-family: "Amazon Ember", Arial, sans-serif;
   font-size: 12px;
   font-weight: 700;
   line-height: 16px;
   color: #cc0c39;
 }
 .main .content .ads .products .product-2 .connect {
-  font-family: Family "Amazon Ember", Arial, sans-serif;
+  font-family: "Amazon Ember", Arial, sans-serif;
   font-size: 13px;
   font-weight: 400;
   line-height: 17px;
@@ -588,11 +661,9 @@
 }
 .main .content .ads .products .product-3 {
   background-color: #fff;
-  width: 100%;
-  height: 380px;
 }
 .main .content .ads .products .product-3 .title {
-  font-family: Family "Amazon Ember", Arial, sans-serif;
+  font-family: "Amazon Ember", Arial, sans-serif;
   font-size: 21px;
   font-weight: 700;
   line-height: 27px;
@@ -614,13 +685,15 @@
 .main .content .ads .products .product-3 .image img {
   width: 90%;
   height: 260px;
-  transition: transform 1s linear;
+  transition: transform 2s linear;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 .main .content .ads .products .product-3 .image img:hover {
   transform: scale(1.2);
 }
 .main .content .ads .products .product-3 .connect {
-  font-family: Family "Amazon Ember", Arial, sans-serif;
+  font-family: "Amazon Ember", Arial, sans-serif;
   font-size: 13px;
   font-weight: 400;
   line-height: 17px;
@@ -640,11 +713,9 @@
 }
 .main .content .ads .products .product-4 {
   background-color: #fff;
-  width: 100%;
-  height: 380px;
 }
 .main .content .ads .products .product-4 .title {
-  font-family: Family "Amazon Ember", Arial, sans-serif;
+  font-family: "Amazon Ember", Arial, sans-serif;
   font-size: 21px;
   font-weight: 700;
   line-height: 27px;
@@ -686,7 +757,9 @@
 .main .content .ads .products .product-4 .product .product_detail .product_image img {
   width: 90%;
   height: 110px;
-  transition: transform 1s linear;
+  transition: transform 2s linear;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 .main .content .ads .products .product-4 .product .product_detail .product_image img:hover {
   transform: scale(1.2);
@@ -698,7 +771,7 @@
   justify-content: start;
   align-items: center;
   padding-left: 8px;
-  font-family: Family "Amazon Ember", Arial, sans-serif;
+  font-family: "Amazon Ember", Arial, sans-serif;
   font-size: 13px;
   font-weight: 400;
   line-height: 17px;
@@ -708,7 +781,7 @@
   text-decoration: none;
 }
 .main .content .ads .products .product-4 .connect {
-  font-family: Family "Amazon Ember", Arial, sans-serif;
+  font-family: "Amazon Ember", Arial, sans-serif;
   font-size: 13px;
   font-weight: 400;
   line-height: 17px;
@@ -726,41 +799,549 @@
 .main .content .ads .products .product-4 .connect a:hover {
   color: #c7511f;
 }
-.main .content .products-2 {
+.main .content .supplier .products-2 {
   width: 100%;
   height: 380px;
-  background-color: aquamarine;
-  margin-top: 10px;
   margin-left: 1px;
 }
-.main .content .products-2 .products-2-1 {
+.main .content .supplier .products-2 .products-2-1 {
   background-color: #fff;
-  width: 100%;
-  height: 380px;
-  margin-right: 10px;
 }
-.main .content .products-2 .products-2-2 {
-  background-color: #fff;
+.main .content .supplier .products-2 .products-2-1 .title {
+  font-family: "Amazon Ember", Arial, sans-serif;
+  font-size: 21px;
+  font-weight: 700;
+  line-height: 27px;
   width: 100%;
-  height: 380px;
-  margin-right: 10px;
+  height: 60px;
+  display: flex;
+  justify-content: auto;
+  align-items: center;
+  color: #0f1111;
+  padding-left: 13px;
 }
-.main .content .products-2 .products-2-3 {
-  background-color: #fff;
+.main .content .supplier .products-2 .products-2-1 .image {
+  flex-grow: 1;
   width: 100%;
-  height: 380px;
-  margin-right: 10px;
+  height: 260px;
+  text-align: center;
+  overflow: hidden;
 }
-.main .content .products-2 .products-2-4 {
-  background-color: #fff;
+.main .content .supplier .products-2 .products-2-1 .image img {
+  width: 90%;
+  height: 260px;
+  transition: transform 2s linear;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.main .content .supplier .products-2 .products-2-1 .image img:hover {
+  transform: scale(1.2);
+}
+.main .content .supplier .products-2 .products-2-1 .connect {
+  font-family: "Amazon Ember", Arial, sans-serif;
+  font-size: 13px;
+  font-weight: 400;
+  line-height: 17px;
   width: 100%;
-  height: 380px;
+  height: 60px;
+  display: flex;
+  justify-content: auto;
+  align-items: center;
+  padding-left: 13px;
+}
+.main .content .supplier .products-2 .products-2-1 .connect a {
+  color: rgb(0, 113, 133);
+  text-decoration: none;
+}
+.main .content .supplier .products-2 .products-2-1 .connect a:hover {
+  color: #c7511f;
+}
+.main .content .supplier .products-2 .products-2-2 {
+  background-color: #fff;
+}
+.main .content .supplier .products-2 .products-2-2 .title {
+  font-family: "Amazon Ember", Arial, sans-serif;
+  font-size: 21px;
+  font-weight: 700;
+  line-height: 27px;
+  width: 100%;
+  height: 60px;
+  display: flex;
+  justify-content: auto;
+  align-items: center;
+  color: #0f1111;
+  padding-left: 13px;
+}
+.main .content .supplier .products-2 .products-2-2 .product {
+  width: 100%;
+  height: 280px;
+  display: flex;
+  justify-content: auto;
+  align-items: center;
+  flex-wrap: wrap;
+  padding: 0px 10px 0px 10px;
+}
+.main .content .supplier .products-2 .products-2-2 .product .product_detail {
+  width: 50%;
+  height: 50%;
+  display: flex;
+  justify-content: auto;
+  align-items: center;
+  flex-direction: column;
+  flex-wrap: wrap;
+}
+.main .content .supplier .products-2 .products-2-2 .product .product_detail .product_image {
+  width: 100%;
+  height: 110px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  overflow: hidden;
+}
+.main .content .supplier .products-2 .products-2-2 .product .product_detail .product_image img {
+  width: 90%;
+  height: 110px;
+  transition: transform 2s linear;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.main .content .supplier .products-2 .products-2-2 .product .product_detail .product_image img:hover {
+  transform: scale(1.2);
+}
+.main .content .supplier .products-2 .products-2-2 .product .product_detail .title_p1 {
+  width: 100%;
+  height: 30px;
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  padding-left: 8px;
+  font-family: "Amazon Ember", Arial, sans-serif;
+  font-size: 13px;
+  font-weight: 400;
+  line-height: 17px;
+  color: #0f1111;
+}
+.main .content .supplier .products-2 .products-2-2 .product .product_detail .title_p1:hover {
+  text-decoration: none;
+}
+.main .content .supplier .products-2 .products-2-2 .connect {
+  font-family: "Amazon Ember", Arial, sans-serif;
+  font-size: 13px;
+  font-weight: 400;
+  line-height: 17px;
+  width: 100%;
+  height: 40px;
+  display: flex;
+  justify-content: auto;
+  align-items: center;
+  padding-left: 13px;
+}
+.main .content .supplier .products-2 .products-2-2 .connect a {
+  color: rgb(0, 113, 133);
+  text-decoration: none;
+}
+.main .content .supplier .products-2 .products-2-2 .connect a:hover {
+  color: #c7511f;
+}
+.main .content .supplier .products-2 .products-2-3 {
+  background-color: #fff;
+}
+.main .content .supplier .products-2 .products-2-3 .title {
+  font-family: "Amazon Ember", Arial, sans-serif;
+  font-size: 21px;
+  font-weight: 700;
+  line-height: 27px;
+  width: 100%;
+  height: 60px;
+  display: flex;
+  justify-content: auto;
+  align-items: center;
+  color: #0f1111;
+  padding-left: 13px;
+}
+.main .content .supplier .products-2 .products-2-3 .image {
+  flex-grow: 1;
+  width: 100%;
+  height: 260px;
+  text-align: center;
+  overflow: hidden;
+}
+.main .content .supplier .products-2 .products-2-3 .image img {
+  width: 90%;
+  height: 260px;
+  transition: transform 2s linear;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.main .content .supplier .products-2 .products-2-3 .image img:hover {
+  transform: scale(1.2);
+}
+.main .content .supplier .products-2 .products-2-3 .connect {
+  font-family: "Amazon Ember", Arial, sans-serif;
+  font-size: 13px;
+  font-weight: 400;
+  line-height: 17px;
+  width: 100%;
+  height: 60px;
+  display: flex;
+  justify-content: auto;
+  align-items: center;
+  padding-left: 13px;
+}
+.main .content .supplier .products-2 .products-2-3 .connect a {
+  color: rgb(0, 113, 133);
+  text-decoration: none;
+}
+.main .content .supplier .products-2 .products-2-3 .connect a:hover {
+  color: #c7511f;
+}
+.main .content .supplier .products-2 .products-2-4 {
+  background-color: #fff;
+}
+.main .content .supplier .products-2 .products-2-4 .title {
+  font-family: "Amazon Ember", Arial, sans-serif;
+  font-size: 21px;
+  font-weight: 700;
+  line-height: 27px;
+  width: 100%;
+  height: 60px;
+  display: flex;
+  justify-content: auto;
+  align-items: center;
+  color: #0f1111;
+  padding-left: 13px;
+}
+.main .content .supplier .products-2 .products-2-4 .image {
+  flex-grow: 1;
+  width: 100%;
+  height: 260px;
+  text-align: center;
+  overflow: hidden;
+}
+.main .content .supplier .products-2 .products-2-4 .image img {
+  width: 90%;
+  height: 260px;
+  transition: transform 2s linear;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.main .content .supplier .products-2 .products-2-4 .image img:hover {
+  transform: scale(1.2);
+}
+.main .content .supplier .products-2 .products-2-4 .connect {
+  font-family: "Amazon Ember", Arial, sans-serif;
+  font-size: 13px;
+  font-weight: 400;
+  line-height: 17px;
+  width: 100%;
+  height: 60px;
+  display: flex;
+  justify-content: auto;
+  align-items: center;
+  padding-left: 13px;
+}
+.main .content .supplier .products-2 .products-2-4 .connect a {
+  color: rgb(0, 113, 133);
+  text-decoration: none;
+}
+.main .content .supplier .products-2 .products-2-4 .connect a:hover {
+  color: #c7511f;
+}
+.main .content .supplier .product-slide {
+  width: 100%;
+  height: 250px;
+  margin-left: 1px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+.main .content .supplier .product-slide .carousel {
+  width: 100%;
+  height: 250px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.main .content .supplier .product-slide .carousel .carousel-inner {
+  width: 100%;
+  height: 250px;
+  background-color: #fff;
+}
+.main .content .supplier .product-slide .carousel .carousel-inner .title {
+  font-family: "Amazon Ember", Arial, sans-serif;
+  font-size: 21px;
+  font-weight: 700;
+  line-height: 32px;
+  color: #0f1111;
+  width: 100%;
+  height: 50px;
+}
+.main .content .supplier .product-slide .carousel .carousel-inner .carousel-item .images {
+  width: 100%;
+  height: 200px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #fff;
+  overflow: hidden;
+}
+.main .content .supplier .product-slide .carousel .carousel-inner .carousel-item .images img {
+  width: auto;
+  height: 220px;
+  padding-right: 10px;
+}
+.main .content .supplier .product-slide .carousel .btn-style {
+  width: 60px;
+  height: 100px;
+  border-radius: 5px;
+  top: 80px;
+  margin-left: 20px;
+  margin-right: 20px;
+}
+.main .content .supplier .product-slide .carousel .btn-style:hover {
+  background-color: rgb(0, 113, 133);
 }
 
 .footer {
   width: 100%;
-  height: 500px;
+  height: auto;
   background-color: pink;
+}
+.footer .back-to-top {
+  width: 100%;
+  height: 40px;
+  font-family: "Amazon Ember", Arial, sans-serif;
+  font-size: 13px;
+  font-weight: 400;
+  line-height: 19px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #37475a;
+}
+.footer .back-to-top:hover {
+  background-color: rgba(71, 63, 63, 0.822);
+}
+.footer .back-to-top a {
+  color: #fff;
+}
+.footer .back-to-top a:hover {
+  text-decoration: none;
+}
+.footer .info {
+  background-color: #232f3e;
+  width: 100%;
+  height: auto;
+}
+.footer .info .information {
+  background-color: #232f3e;
+  width: 100%;
+  height: 400px;
+  display: flex;
+  justify-content: center;
+  align-items: auto;
+}
+.footer .info .information .information-1 {
+  display: flex;
+  flex-direction: column;
+  padding-top: 50px;
+  padding-right: 30px;
+}
+.footer .info .information .information-1 p {
+  font-family: "Amazon Ember", Arial, sans-serif;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 17px;
+  color: #fff;
+}
+.footer .info .information .information-1 a {
+  font-family: "Amazon Ember", Arial, sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 17px;
+  color: #dddddd;
+  text-decoration: none;
+  padding: 5px;
+}
+.footer .info .line {
+  width: 100%;
+  height: 5px;
+  border-top: 1px solid #cccccc;
+}
+.footer .info .trademark {
+  background-color: #232f3e;
+  width: 100%;
+  height: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.footer .info .trademark .logo {
+  margin-right: 70px;
+}
+.footer .info .trademark .logo a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.footer .info .trademark .logo a img {
+  width: 100px;
+  height: 40px;
+}
+.footer .info .trademark .languages {
+  border: 1px solid #cccccc;
+  width: auto;
+  height: 35px;
+  padding: 0 5px;
+  margin: 0 5px;
+}
+.footer .info .trademark .languages .dropdown .btn {
+  font-family: "Amazon Ember", Arial, sans-serif;
+  font-size: 13px;
+  font-weight: 400;
+  line-height: 18px;
+  color: #cccccc;
+}
+.footer .info .trademark .languages .dropdown .btn span {
+  padding-right: 3px;
+}
+.footer .info .trademark .languages .dropdown:hover .dropdown-menu {
+  display: block;
+}
+.footer .info .trademark .languages .dropdown .dropdown-menu {
+  width: 250px;
+  height: auto;
+}
+.footer .info .trademark .languages .dropdown .dropdown-menu .dropdown-item {
+  font-family: "Amazon Ember", Arial, sans-serif;
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 18px;
+  display: flex;
+  justify-content: auto;
+  align-items: center;
+  color: #0f1111;
+}
+.footer .info .trademark .languages .dropdown .dropdown-menu .dropdown-item .link-item {
+  font-family: "Amazon Ember", Arial, sans-serif;
+  font-size: 10px;
+  font-weight: 400;
+  line-height: 0px;
+  color: rgb(0, 113, 133);
+  padding-left: 5px;
+}
+.footer .info .trademark .languages .dropdown .dropdown-menu .dropdown-item .link-item1 {
+  font-family: "Amazon Ember", Arial, sans-serif;
+  font-size: 10px;
+  font-weight: 400;
+  line-height: 0px;
+  color: blue;
+  padding-left: 50px;
+}
+.footer .info .trademark .languages .dropdown .dropdown-menu .dropdown-item .circle-1 {
+  border: 1px solid grey;
+  width: 15px;
+  height: 15px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #fff;
+  margin-right: 5px;
+}
+.footer .info .trademark .languages .dropdown .dropdown-menu .dropdown-item .circle-1 .circle-2 {
+  background-color: #febd69;
+  width: 7px;
+  height: 7px;
+  border-radius: 50%;
+}
+.footer .info .trademark .languages .dropdown .dropdown-menu .dropdown-item .circle-3 {
+  border: 1px solid grey;
+  width: 15px;
+  height: 15px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: bg-color3;
+  margin-right: 5px;
+}
+.footer .info .trademark .languages .dropdown .dropdown-menu .dropdown-item .circle-3 .circle-4 {
+  background-color: #febd69;
+  width: 7px;
+  height: 7px;
+  border-radius: 50%;
+  visibility: hidden;
+}
+.footer .info .trademark .languages .dropdown .dropdown-menu .dropdown-item .circle-3:hover .circle-4 {
+  visibility: visible;
+}
+.footer .info .trademark .languages .dropdown .dropdown-menu .language-item {
+  width: 200px;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  padding-left: 5px;
+  color: #0f1111;
+  background-color: #fff;
+  z-index: 10;
+}
+.footer .info .trademark .languages .dropdown .dropdown-menu .language-item .circle-1 {
+  border: 1px solid grey;
+  width: 15px;
+  height: 15px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #fff;
+  margin-right: 5px;
+}
+.footer .info .trademark .languages .dropdown .dropdown-menu .language-item .circle-1 .circle-2 {
+  background-color: #febd69;
+  width: 7px;
+  height: 7px;
+  border-radius: 50%;
+}
+.footer .info .trademark .languages .dropdown .dropdown-menu .language-item .circle-3 {
+  border: 1px solid grey;
+  width: 15px;
+  height: 15px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: bg-color3;
+  margin-right: 5px;
+}
+.footer .info .trademark .languages .dropdown .dropdown-menu .language-item .circle-3 .circle-4 {
+  background-color: #febd69;
+  width: 7px;
+  height: 7px;
+  border-radius: 50%;
+  visibility: hidden;
+}
+.footer .info .trademark .languages .dropdown .dropdown-menu .language-item .circle-3:hover .circle-4 {
+  visibility: visible;
+}
+.footer .info .trademark .usd {
+  border: 1px solid #cccccc;
+  width: auto;
+  height: 35px;
+  padding: 0 10px;
+  margin: 0 5px;
+}
+.footer .info .trademark .usd a {
+  font-family: "Amazon Ember", Arial, sans-serif;
+  font-size: 13px;
+  font-weight: 400;
+  line-height: 18px;
+  color: #cccccc;
+}
+.footer .support {
+  width: 100%;
+  height: 415px;
+  background-color: #131a22;
 }
 
 * {
@@ -768,4 +1349,13 @@
   margin: 0;
   box-sizing: border-box;
   font-family: Family "Amazon Ember", Arial, sans-serif;
+}
+
+.wh-100 {
+  width: 70px;
+  height: 240px;
+  border-radius: 5px;
+}
+.wh-100:hover {
+  border: 1px solid blue;
 }/*# sourceMappingURL=index.css.map */

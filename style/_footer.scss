@@ -1,4 +1,106 @@
 .footer {
-    @include w-h (100%, 500px);
+    @include w-h (100%, auto);
     background-color: pink;
+
+    .back-to-top {
+        @include w-h (100%, 40px);
+        @include font-color (13px, 400, 19px);
+        @include flex (flex, center, center);
+        background-color: $color9 ;
+
+        &:hover {
+            background-color: rgba(71, 63, 63, 0.822);
+        }
+
+        a {
+            color: $color1 ;
+
+            &:hover {
+                text-decoration: none;
+            }
+        }
+    }
+
+    .info {
+        background-color: $bg-color2;
+        @include w-h (100%, auto);
+
+        .information {
+            background-color: $bg-color2 ;
+            @include w-h (100%, 400px);
+            @include flex (flex, center, auto);
+
+            .information-1 {
+                display: flex;
+                flex-direction: column;
+                padding-top: 50px;
+                padding-right: 30px;
+
+                p {
+                    @include font-color (16px, 700, 17px);
+                    color: $color1 ;
+                }
+
+                a {
+                    @include font-color (14px, 400, 17px);
+                    color: $color10 ;
+                    text-decoration: none;
+                    padding: 5px;
+                }
+            }
+        }
+
+        .line {
+            @include w-h (100%, 5px);
+            border-top: 1px solid $color5;
+        }
+
+        .trademark {
+            background-color: $bg-color2 ;
+            @include w-h (100%, 100px);
+            @include flex (flex, center, center);
+
+            .logo {
+                margin-right: 70px;
+
+                a {
+                    @include flex (flex, center, center);
+
+                    img {
+                        @include w-h (100px, 40px);
+                    }
+
+                }
+            }
+
+            .languages {
+                border: 1px solid $color5;
+                @include w-h (auto, 35px);
+                @include style-dropdown-languages;
+                padding: 0 5px;
+                margin: 0 5px;
+
+            }
+
+            .usd {
+                border: 1px solid $color5;
+                @include w-h (auto, 35px);
+                padding: 0 10px;
+                margin: 0 5px;
+
+                a {
+                    @include font-color (13px, 400, 18px);
+                    color: $color5 ;
+
+                }
+
+            }
+
+        }
+    }
+
+    .support {
+        @include w-h (100%, 415px);
+        background-color: $color11 ;
+    }
 }
