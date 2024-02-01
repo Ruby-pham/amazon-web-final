@@ -39,12 +39,16 @@
 
 @mixin style-dropdown-languages {
     .dropdown {
-        .btn {
+        .more {
             @include font-color (13px, 400, 18px);
             color: $color5 ;
 
             span {
                 padding-right: 3px;
+            }
+
+            &:hover {
+                text-decoration: none;
             }
 
         }
@@ -372,7 +376,7 @@
             .title {
                 @include font-color (21px, 700, 32px);
                 color: $color4;
-                @include w-h (100%, 50px);
+                @include w-h (100%, auto);
             }
 
             .carousel-item {

@@ -143,8 +143,10 @@
         button {
             border-radius: 30%;
             background-color: blue;
+            border: 2px solid blue;
             @include w-h (40px, 20px);
             @include flex (flex, center, center);
+            overflow: hidden;
 
             .first {
                 @include font-color (12px, 400, 13px);
@@ -152,6 +154,7 @@
                 background-color: aliceblue;
                 @include w-h (20px, 20px);
                 @include flex (flex, center, center);
+                transform: skew(-20deg);
             }
 
             .last {
@@ -159,6 +162,7 @@
                 color: $color10;
                 @include w-h (20px, 20px);
                 @include flex (flex, center, center);
+                background-color: blue;
             }
         }
 

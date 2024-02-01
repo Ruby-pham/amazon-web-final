@@ -5,6 +5,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Amazon Web</title>
     <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
+    <link
       rel="icon"
       href="https://th.bing.com/th/id/OIP.0RGlCdgsOY2eBnhaSfFFsQHaFg?w=241&h=180&c=7&r=0&o=5&dpr=1.5&pid=1.7"
     />
@@ -98,7 +102,7 @@
             <div class="change-language">
               <div class="dropdown">
                 <a
-                  class="btn"
+                  class="more"
                   href="#"
                   role="button"
                   data-toggle="dropdown"
@@ -200,6 +204,11 @@
                 <span> <i class="fa-solid fa-cart-shopping"></i></span>
                 <span class="signin_2">Cart</span>
               </a>
+              <div
+                class="bell animate__animated animate__swing animate__infinite infinite"
+              >
+                <i class="fa-solid fa-bell"></i>
+              </div>
             </div>
           </div>
         </div>
@@ -370,9 +379,9 @@
                 ></span>
                 <span class="sr-only">Next</span>
               </button>
-              <div class="row products d-flex justify-content-center">
+              <div class="row products">
                 <div
-                  class="col-3 col-12 col-sm-12 col-md-6 col-lg-3 w-100 h-100 pr-0"
+                  class="col-12 col-sm-12 col-md-6 col-lg-3 w-100 h-100 pr-0"
                 >
                   <div class="product-1 w-100 h-100">
                     <div class="title">Toys under $25</div>
@@ -389,7 +398,7 @@
                   </div>
                 </div>
                 <div
-                  class="col-3 col-12 col-sm-12 col-md-6 col-lg-3 w-100 h-100 pr-0"
+                  class="col-12 col-sm-12 col-md-6 col-lg-3 w-100 h-100 pr-0"
                 >
                   <div class="product-2 w-100 h-100">
                     <div class="title">Winter Sale deals for your home</div>
@@ -458,7 +467,7 @@
                   </div>
                 </div>
                 <div
-                  class="col-3 col-12 col-sm-12 col-md-6 col-lg-3 w-100 h-100 pr-0"
+                  class="col-12 col-sm-12 col-md-6 col-lg-3 w-100 h-100 pr-0"
                 >
                   <div class="product-3 w-100 h-100">
                     <div class="title">Deals in PCs</div>
@@ -474,9 +483,7 @@
                     </div>
                   </div>
                 </div>
-                <div
-                  class="col-3 col-12 col-sm-12 col-md-6 col-lg-3 w-100 h-100"
-                >
+                <div class="col-12 col-sm-12 col-md-6 col-lg-3 w-100 h-100">
                   <div class="product-4 w-100 h-100">
                     <div class="title">Resort-ready styles</div>
                     <div class="product">
@@ -535,7 +542,9 @@
             </div>
           </div>
           <div class="supplier d-flex justify-content-center flex-column">
-            <div class="row products-2 d-flex justify-content-center">
+            <div
+              class="row col-12-block col-sm-12-block products-2 d-flex justify-content-center"
+            >
               <div
                 class="col-3 col-12 col-sm-12 col-md-6 col-lg-3 w-100 h-100 pr-0"
               >
@@ -909,14 +918,14 @@
                 </div>
               </div>
             </div>
-            <div class="product-slide pl-3 pr-3">
+            <div class="product-slide pl-3 pr-3 col-12">
+              <div class="row title">Most wished for in Movies & TV</div>
               <div
                 id="carouselExampleControls-2"
                 class="carousel slide"
                 data-ride="carousel"
               >
                 <div class="carousel-inner pl-3">
-                  <div class="title">Most wished for in Movies & TV</div>
                   <div class="carousel-item active">
                     <div class="images">
                       <img
@@ -1110,10 +1119,12 @@
                 <img src="assets/images/logo.png" />
               </a>
             </div>
-            <div class="languages">
+            <div
+              class="languages d-flex justify-content-center align-items-center"
+            >
               <div class="dropdown">
                 <a
-                  class="btn"
+                  class="more"
                   href="#"
                   role="button"
                   data-toggle="dropdown"

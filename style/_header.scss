@@ -149,6 +149,7 @@
             .cart {
                 @include w-h (85px, 55px);
                 @include flex (flex, center, center);
+                position: relative;
 
                 &:hover {
                     border: 1px solid white
@@ -160,6 +161,18 @@
                 }
 
                 @include style-navtools;
+
+                .bell {
+                    position: absolute;
+                    left: 22px;
+                    top: 5px;
+
+                    i {
+                        color: $color2;
+                        font-size: 15px;
+
+                    }
+                }
             }
 
         }
@@ -170,16 +183,12 @@
         @include w-h (100%, 40px);
         background-color: $bg-color2;
         @include flex (flex, auto, center);
-        padding: 0px 20px;
 
         .menu_left {
             position: relative;
             @include w-h (50px, 36px);
             @include flex (flex, center, center);
-
-            &:hover {
-                border: 1px solid white
-            }
+            margin-left: 20px;
 
             &:hover .sidebar {
                 visibility: visible;
@@ -198,17 +207,23 @@
 
             .sidebar {
                 @include w-h (0px, 100vh);
+                // @include w-h (350px, 100vh);
+                // margin-top: 90px;
+                // margin-left: -20px;
+                // background-color: pink;
+
                 @include flex (flex, auto, auto);
                 position: absolute;
                 top: -65px;
                 left: -21px;
                 z-index: 3;
                 background-color: rgba(0, 0, 0, 0.1);
+
                 visibility: hidden;
                 transition: width 1s;
 
                 .sidebar_list {
-                    @include w-h (270px, auto);
+                    @include w-h (270px, 100vh);
                     background-color: $bg-color3 ;
                     overflow: scroll;
 
