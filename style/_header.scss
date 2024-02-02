@@ -190,13 +190,26 @@
             @include flex (flex, center, center);
             margin-left: 20px;
 
-            &:hover .sidebar {
+            &:hover {
+                border: 1px solid white;
+            }
+
+            input {
+                display: none;
+            }
+
+            #cancel:checked~.sidebar {
                 visibility: visible;
                 width: 1500px;
             }
 
+            #cancel-1:checked~.sidebar {
+                visibility: hidden;
+                width: 0px;
+            }
+
             .title {
-                text-decoration: none;
+                padding-top: 7px;
                 @include font-color (14px, 700, 15px);
                 color: $color1;
 
@@ -207,11 +220,6 @@
 
             .sidebar {
                 @include w-h (0px, 100vh);
-                // @include w-h (350px, 100vh);
-                // margin-top: 90px;
-                // margin-left: -20px;
-                // background-color: pink;
-
                 @include flex (flex, auto, auto);
                 position: absolute;
                 top: -65px;
@@ -220,7 +228,7 @@
                 background-color: rgba(0, 0, 0, 0.1);
 
                 visibility: hidden;
-                transition: width 1s;
+                transition: width 2s;
 
                 .sidebar_list {
                     @include w-h (270px, 100vh);
@@ -272,6 +280,7 @@
                             @include flex (flex, space-between, auto);
                         }
                     }
+
                 }
 
                 .sidebar_cancel {

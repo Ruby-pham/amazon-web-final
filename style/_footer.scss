@@ -31,11 +31,10 @@
             @include flex (flex, center, auto);
 
             .information-1 {
-                display: flex;
+                @include flex (flex, auto, auto);
                 flex-direction: column;
-                @include w-h (230px, auto);
+                @include w-h (21%, auto);
                 padding-top: 50px;
-                padding-right: 30px;
 
                 p {
                     @include font-color (16px, 700, 17px);
@@ -43,7 +42,7 @@
                 }
 
                 a {
-                    @include font-color (14px, 400, 17px);
+                    @include font-color (12px, 400, 17px);
                     color: $color10 ;
                     text-decoration: none;
                     padding: 5px;
@@ -52,7 +51,7 @@
         }
 
         .line {
-            @include w-h (100%, 5px);
+            @include w-h (100%, auto);
             border-top: 1px solid $color5;
         }
 
@@ -62,7 +61,7 @@
             @include flex (flex, center, center);
 
             .logo {
-                margin-right: 70px;
+                margin-right: 4%;
 
                 a {
                     @include flex (flex, center, center);
@@ -76,17 +75,17 @@
 
             .languages {
                 border: 1px solid $color5;
-                @include w-h (auto, 35px);
+                // @include w-h (auto, 35px);
                 @include style-dropdown-languages;
-                padding: 0 5px;
+                padding: 9px 5px;
                 margin: 0 5px;
 
             }
 
             .usd {
                 border: 1px solid $color5;
-                @include w-h (auto, 35px);
-                padding: 0 10px;
+                // @include w-h (auto, 35px);
+                padding: 5px 10px;
                 margin: 0 5px;
 
                 a {
@@ -108,17 +107,16 @@
         .support-1 {
             display: flex;
             flex-direction: column;
-            @include w-h (150px, auto);
+            @include w-h (15%, auto);
             padding-top: 20px;
-            padding-right: 30px;
 
             a {
                 @include font-color (12px, 400, 13px);
-                @include w-h (130px, 95px);
+                @include w-h (auto, 25%);
                 display: flex;
                 flex-direction: column;
                 color: $color12 ;
-                padding: 5px;
+                padding: 10px;
 
                 span {
                     @include font-color (12px, 700, 14px);
