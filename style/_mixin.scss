@@ -59,6 +59,8 @@
 
         .dropdown-menu {
             @include w-h (250px, auto);
+            margin-top: 20px;
+            margin-left: -20px;
 
             .dropdown-item {
                 @include font-color (12px, 400, 18px);
@@ -530,6 +532,16 @@
 
         margin: 0;
 
+        .start-here {
+            color: $color7;
+
+            &:hover {
+                color: $color14
+            }
+        }
+    }
+
+    a {
         button {
             @include w-h (150px, 20px);
             @include font-color (10px, 700, 15px);
@@ -537,14 +549,6 @@
             border: none;
             border-radius: 5px;
 
-        }
-
-        .start-here {
-            color: $color7;
-
-            &:hover {
-                color: $color14
-            }
         }
     }
 }

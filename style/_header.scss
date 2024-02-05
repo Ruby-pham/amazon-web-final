@@ -133,6 +133,61 @@
 
                 @include style-navtools;
 
+                &:hover .dropdown-menu {
+                    display: block
+                }
+
+                .dropdown-menu {
+                    @include w-h (350px, auto);
+                    margin-left: -150px;
+                    margin-top: 20px;
+
+                    .see-recommendations {
+                        @include flex (flex, center, center);
+                        flex-direction: column;
+                        @include font-color (10px, 400, 15px);
+                        @include recommendations
+                    }
+
+                    .your-list-account {
+                        @include flex (flex, auto, auto);
+                        @include w-h (100%, auto);
+                        margin-left: 20px;
+
+                        .account {
+                            border-left: 1px solid grey;
+                            padding-left: 20px;
+                            @include w-h (60%, auto);
+                        }
+
+                        .list {
+                            @include w-h (40%, auto);
+                        }
+
+                        .list,
+                        .account {
+                            @include flex (flex, auto, auto);
+                            flex-direction: column;
+
+                            p {
+                                @include font-color (12px, 700, 15px);
+                                color: $color4;
+                                margin: 0;
+                            }
+
+                            a {
+                                @include font-color (11px, 400, 18px);
+
+                                color: $color4;
+
+                                &:hover {
+                                    color: $color14
+                                }
+                            }
+                        }
+                    }
+                }
+
             }
 
             .order-return {

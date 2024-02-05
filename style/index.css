@@ -139,6 +139,8 @@
 .header .nav-belt .nav-tools .change-language .dropdown .dropdown-menu {
   width: 250px;
   height: auto;
+  margin-top: 20px;
+  margin-left: -20px;
 }
 .header .nav-belt .nav-tools .change-language .dropdown .dropdown-menu .dropdown-item {
   font-family: "Amazon Ember", Arial, sans-serif;
@@ -281,6 +283,92 @@
   font-weight: 700;
   line-height: 13px;
   color: #fff;
+}
+.header .nav-belt .nav-tools .signin:hover .dropdown-menu {
+  display: block;
+}
+.header .nav-belt .nav-tools .signin .dropdown-menu {
+  width: 350px;
+  height: auto;
+  margin-left: -150px;
+  margin-top: 20px;
+}
+.header .nav-belt .nav-tools .signin .dropdown-menu .see-recommendations {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  font-family: "Amazon Ember", Arial, sans-serif;
+  font-size: 10px;
+  font-weight: 400;
+  line-height: 15px;
+}
+.header .nav-belt .nav-tools .signin .dropdown-menu .see-recommendations p {
+  padding: 3px;
+  margin: 0;
+}
+.header .nav-belt .nav-tools .signin .dropdown-menu .see-recommendations p .start-here {
+  color: rgb(0, 113, 133);
+}
+.header .nav-belt .nav-tools .signin .dropdown-menu .see-recommendations p .start-here:hover {
+  color: #e9941a;
+}
+.header .nav-belt .nav-tools .signin .dropdown-menu .see-recommendations a button {
+  width: 150px;
+  height: 20px;
+  font-family: "Amazon Ember", Arial, sans-serif;
+  font-size: 10px;
+  font-weight: 700;
+  line-height: 15px;
+  box-shadow: inset 0 0 20px #ffc531;
+  border: none;
+  border-radius: 5px;
+}
+.header .nav-belt .nav-tools .signin .dropdown-menu .your-list-account {
+  display: flex;
+  justify-content: auto;
+  align-items: auto;
+  width: 100%;
+  height: auto;
+  margin-left: 20px;
+}
+.header .nav-belt .nav-tools .signin .dropdown-menu .your-list-account .account {
+  border-left: 1px solid grey;
+  padding-left: 20px;
+  width: 60%;
+  height: auto;
+}
+.header .nav-belt .nav-tools .signin .dropdown-menu .your-list-account .list {
+  width: 40%;
+  height: auto;
+}
+.header .nav-belt .nav-tools .signin .dropdown-menu .your-list-account .list,
+.header .nav-belt .nav-tools .signin .dropdown-menu .your-list-account .account {
+  display: flex;
+  justify-content: auto;
+  align-items: auto;
+  flex-direction: column;
+}
+.header .nav-belt .nav-tools .signin .dropdown-menu .your-list-account .list p,
+.header .nav-belt .nav-tools .signin .dropdown-menu .your-list-account .account p {
+  font-family: "Amazon Ember", Arial, sans-serif;
+  font-size: 12px;
+  font-weight: 700;
+  line-height: 15px;
+  color: #0f1111;
+  margin: 0;
+}
+.header .nav-belt .nav-tools .signin .dropdown-menu .your-list-account .list a,
+.header .nav-belt .nav-tools .signin .dropdown-menu .your-list-account .account a {
+  font-family: "Amazon Ember", Arial, sans-serif;
+  font-size: 11px;
+  font-weight: 400;
+  line-height: 18px;
+  color: #0f1111;
+}
+.header .nav-belt .nav-tools .signin .dropdown-menu .your-list-account .list a:hover,
+.header .nav-belt .nav-tools .signin .dropdown-menu .your-list-account .account a:hover {
+  color: #e9941a;
 }
 .header .nav-belt .nav-tools .order-return {
   width: 85px;
@@ -948,7 +1036,13 @@
   padding: 3px;
   margin: 0;
 }
-.footer .product-slide-last .see-recommendations p button {
+.footer .product-slide-last .see-recommendations p .start-here {
+  color: rgb(0, 113, 133);
+}
+.footer .product-slide-last .see-recommendations p .start-here:hover {
+  color: #e9941a;
+}
+.footer .product-slide-last .see-recommendations a button {
   width: 150px;
   height: 20px;
   font-family: "Amazon Ember", Arial, sans-serif;
@@ -958,12 +1052,6 @@
   box-shadow: inset 0 0 20px #ffc531;
   border: none;
   border-radius: 5px;
-}
-.footer .product-slide-last .see-recommendations p .start-here {
-  color: rgb(0, 113, 133);
-}
-.footer .product-slide-last .see-recommendations p .start-here:hover {
-  color: #e9941a;
 }
 .footer .back-to-top {
   width: 100%;
@@ -1068,6 +1156,8 @@
 .footer .info .trademark .languages .dropdown .dropdown-menu {
   width: 250px;
   height: auto;
+  margin-top: 20px;
+  margin-left: -20px;
 }
 .footer .info .trademark .languages .dropdown .dropdown-menu .dropdown-item {
   font-family: "Amazon Ember", Arial, sans-serif;
