@@ -387,8 +387,13 @@
                     overflow: hidden;
 
                     img {
-                        @include w-h (auto, 220px);
-                        padding-right: 10px;
+                        @include w-h (auto, 165px);
+                        margin: 15px;
+                        transition: transform 1s linear;
+
+                        &:hover {
+                            transform: scale(1.1)
+                        }
                     }
                 }
 
@@ -397,7 +402,8 @@
 
 
         .btn-style {
-            @include w-h (60px, 100px);
+            @include w-h (30px, 40px);
+            background-color: $color9;
             border-radius: 5px;
             top: 80px;
             margin-left: 20px;
@@ -408,5 +414,137 @@
             }
         }
 
+    }
+}
+
+@mixin style-product-slide-last {
+    .carousel {
+        @include w-h (100%, auto);
+        background-color: $color13;
+        @include flex (flex, center, center);
+
+        .carousel-inner {
+            @include w-h (100%, auto);
+            background-color: $color1;
+
+            .title {
+                @include font-color (18px, 700, 24px);
+                color: $color4;
+                padding: 5px;
+                @include w-h (100%, 10%);
+            }
+
+            .carousel-item {
+                .images {
+                    @include w-h (100%, 350px);
+                    @include flex (flex, center, center);
+                    overflow: hidden;
+
+                    .card {
+                        @include w-h (auto, 350px);
+                        border: none;
+
+                        // transition: transform 1s linear;
+                        .card-img-top {
+                            @include w-h (auto, 40%);
+                            transition: transform 1s linear;
+                            overflow: hidden;
+
+                            &:hover {
+                                transform: scale(1.1)
+                            }
+                        }
+
+                        .card-body {
+                            @include flex (flex, auto, auto);
+                            flex-direction: column;
+                            white-space: nowrap;
+
+                            a {
+                                @include font-color (12px, 400, 18px);
+                                text-decoration: none;
+                            }
+
+                            .text {
+                                color: $color7;
+                                @include w-h (100%, auto);
+                                white-space: wrap;
+                                overflow: hidden;
+                                // text-overflow: ellipsis;
+
+
+                                &:hover {
+                                    color: $color6
+                                }
+                            }
+
+                            .start {
+                                i {
+                                    color: $color14
+                                }
+
+                                sup {
+                                    color: $color7
+                                }
+                            }
+
+                            .price {
+                                color: $color4
+                            }
+
+                            p {
+                                @include font-color (10px, 400, 16px);
+                                color: $color4
+                            }
+                        }
+
+                        // &:hover {
+                        //     transform: scale(1.1)
+                        // }
+                    }
+                }
+
+            }
+        }
+
+
+        .btn-style {
+            @include w-h (30px, 40px);
+            border-radius: 5px;
+            top: 180px;
+            background-color: $color9;
+            margin-left: 20px;
+            margin-right: 20px;
+
+            &:hover {
+                background-color: $color7;
+            }
+        }
+
+    }
+}
+
+@mixin recommendations {
+    p {
+        padding: 3px;
+
+        margin: 0;
+
+        button {
+            @include w-h (150px, 20px);
+            @include font-color (10px, 700, 15px);
+            box-shadow: inset 0 0 20px $color15;
+            border: none;
+            border-radius: 5px;
+
+        }
+
+        .start-here {
+            color: $color7;
+
+            &:hover {
+                color: $color14
+            }
+        }
     }
 }

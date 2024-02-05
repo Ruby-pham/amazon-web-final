@@ -1,6 +1,18 @@
 .footer {
     @include w-h (100%, auto);
-    background-color: pink;
+
+    .product-slide-last {
+        @include w-h (100%, auto);
+        @include style-product-slide-last;
+        background-color: $color1;
+
+        .see-recommendations {
+            @include font-color (12px, 400, 15px);
+            text-align: center;
+
+            @include recommendations
+        }
+    }
 
     .back-to-top {
         @include w-h (100%, 40px);
@@ -48,11 +60,6 @@
                     padding: 5px;
                 }
             }
-        }
-
-        .line {
-            @include w-h (100%, auto);
-            border-top: 1px solid $color5;
         }
 
         .trademark {
@@ -132,35 +139,42 @@
         @include flex (flex, center, center);
         flex-direction: column;
 
-        a {
-            @include font-color (12px, 400, 13px);
-            color: $color12 ;
-            padding-right: 10px;
-        }
-
-        button {
-            border-radius: 30%;
-            background-color: blue;
-            border: 2px solid blue;
-            @include w-h (40px, 20px);
+        .private {
+            @include w-h (100%, 50px);
             @include flex (flex, center, center);
-            overflow: hidden;
 
-            .first {
+            a {
                 @include font-color (12px, 400, 13px);
-                color: blue;
-                background-color: aliceblue;
-                @include w-h (20px, 20px);
-                @include flex (flex, center, center);
-                transform: skew(-20deg);
+                color: $color12 ;
+                padding-right: 10px;
             }
 
-            .last {
-                @include font-color (12px, 400, 13px);
-                color: $color10;
-                @include w-h (20px, 20px);
-                @include flex (flex, center, center);
+            .end-1 {
+                border-radius: 30%;
                 background-color: blue;
+                border: 2px solid blue;
+                @include w-h (30px, auto);
+                @include flex (flex, center, center);
+                overflow: hidden;
+
+                .first {
+                    // @include font-color (12px, 400, 13px);
+                    font-size: 10px;
+                    color: blue;
+                    background-color: aliceblue;
+                    @include w-h (50%, auto);
+                    @include flex (flex, center, center);
+                    transform: skew(-20deg);
+                }
+
+                .last {
+                    // @include font-color (12px, 400, 13px);
+                    font-size: 10px;
+                    color: $color10;
+                    @include w-h (50%, auto);
+                    @include flex (flex, center, center);
+                    background-color: blue;
+                }
             }
         }
 
