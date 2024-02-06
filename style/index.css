@@ -481,7 +481,7 @@
   padding-right: 4px;
 }
 .header .menu .menu_left .sidebar {
-  width: 0px;
+  width: 300px;
   height: 100vh;
   display: flex;
   justify-content: auto;
@@ -490,17 +490,42 @@
   top: -65px;
   left: -21px;
   z-index: 3;
-  background-color: rgba(0, 0, 0, 0.1);
+  background-color: rgba(0, 0, 0, 0.7);
   visibility: hidden;
   transition: width 2s;
 }
-.header .menu .menu_left .sidebar .sidebar_list {
-  width: 270px;
+.header .menu .menu_left .sidebar .wrap-sidebar_list {
+  width: 280px;
   height: 100vh;
+  display: flex;
+  justify-content: auto;
+  align-items: auto;
+  overflow: hidden;
+}
+.header .menu .menu_left .sidebar #cancel-inner1:checked ~ .sidebar_list {
+  margin-left: -110%;
+}
+.header .menu .menu_left .sidebar #cancel-inner2:checked ~ .sidebar_list {
+  margin-left: -215%;
+}
+.header .menu .menu_left .sidebar #cancel-inner3:checked ~ .sidebar_list {
+  margin-left: -320%;
+}
+.header .menu .menu_left .sidebar #cancel-inner1-1:checked ~ .sidebar_list {
+  margin-left: 0px;
+}
+.header .menu .menu_left .sidebar #cancel-inner2-1:checked ~ .sidebar_list {
+  margin-left: 0px;
+}
+.header .menu .menu_left .sidebar .sidebar_list,
+.header .menu .menu_left .sidebar .sidebar_list-inner {
+  width: 100%;
+  height: 100%;
   background-color: #fff;
   overflow: scroll;
 }
-.header .menu .menu_left .sidebar .sidebar_list .sb_list_title {
+.header .menu .menu_left .sidebar .sidebar_list .sb_list_title,
+.header .menu .menu_left .sidebar .sidebar_list-inner .sb_list_title {
   font-family: "Amazon Ember", Arial, sans-serif;
   font-size: 19px;
   font-weight: 700;
@@ -509,20 +534,36 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 255px;
+  width: 252px;
   height: 50px;
   background-color: #232f3e;
   margin-bottom: 5px;
   position: fixed;
 }
-.header .menu .menu_left .sidebar .sidebar_list .sb_list_title i {
+.header .menu .menu_left .sidebar .sidebar_list .sb_list_title i,
+.header .menu .menu_left .sidebar .sidebar_list-inner .sb_list_title i {
   font-size: 23px;
   margin-right: 5px;
 }
-.header .menu .menu_left .sidebar .sidebar_list .sb_list_item {
-  margin-top: 60px;
+.header .menu .menu_left .sidebar .sidebar_list .title1,
+.header .menu .menu_left .sidebar .sidebar_list-inner .title1 {
+  font-family: "Amazon Ember", Arial, sans-serif;
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 16px;
+  padding-top: 30px;
+  margin: 5px;
 }
-.header .menu .menu_left .sidebar .sidebar_list .sb_list_item li {
+.header .menu .menu_left .sidebar .sidebar_list .sb_list_item,
+.header .menu .menu_left .sidebar .sidebar_list-inner .sb_list_item {
+  margin-top: 60px;
+  width: 255px;
+  height: 50px;
+}
+.header .menu .menu_left .sidebar .sidebar_list .sb_list_item li,
+.header .menu .menu_left .sidebar .sidebar_list-inner .sb_list_item li {
+  width: 100%;
+  height: auto;
   list-style-type: none;
   font-family: "Amazon Ember", Arial, sans-serif;
   font-size: 17px;
@@ -530,9 +571,16 @@
   line-height: 24px;
   color: #232f3e;
   opacity: 0.9;
-  padding: 5px 0px 5px 15px;
 }
-.header .menu .menu_left .sidebar .sidebar_list .sb_list_item li a {
+.header .menu .menu_left .sidebar .sidebar_list .sb_list_item li label,
+.header .menu .menu_left .sidebar .sidebar_list-inner .sb_list_item li label {
+  padding: 7px;
+  margin: 0;
+}
+.header .menu .menu_left .sidebar .sidebar_list .sb_list_item li a,
+.header .menu .menu_left .sidebar .sidebar_list .sb_list_item li label,
+.header .menu .menu_left .sidebar .sidebar_list-inner .sb_list_item li a,
+.header .menu .menu_left .sidebar .sidebar_list-inner .sb_list_item li label {
   text-decoration: none;
   font-size: 14px;
   line-height: 16px;
@@ -540,10 +588,20 @@
   color: #111111;
   opacity: 0.9;
 }
-.header .menu .menu_left .sidebar .sidebar_list .sb_list_item li a:hover {
+.header .menu .menu_left .sidebar .sidebar_list .sb_list_item li a:hover,
+.header .menu .menu_left .sidebar .sidebar_list .sb_list_item li label:hover,
+.header .menu .menu_left .sidebar .sidebar_list-inner .sb_list_item li a:hover,
+.header .menu .menu_left .sidebar .sidebar_list-inner .sb_list_item li label:hover {
   background-color: grey;
 }
-.header .menu .menu_left .sidebar .sidebar_list .sb_list_item .item_space a {
+.header .menu .menu_left .sidebar .sidebar_list .sb_list_item .item_space a,
+.header .menu .menu_left .sidebar .sidebar_list-inner .sb_list_item .item_space a {
+  display: flex;
+  justify-content: space-between;
+  align-items: auto;
+}
+.header .menu .menu_left .sidebar .sidebar_list .sb_list_item .item_space label,
+.header .menu .menu_left .sidebar .sidebar_list-inner .sb_list_item .item_space label {
   display: flex;
   justify-content: space-between;
   align-items: auto;
